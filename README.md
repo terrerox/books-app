@@ -1,5 +1,4 @@
 ## Los tests estan en el Frontend
-- Para ver el reporte ir a `frontend/mochawesome-report/mochawesome.html`.
 
 ## Reporte HTML
 - Para ver el reporte ir a `frontend/mochawesome-report/mochawesome.html`.
@@ -11,4 +10,4 @@
 - Para ver las historias de usuario `https://dev.azure.com/202010403`.
 
 
-#Francis Terrero 2020-10403
+##Francis Terrero 2020-10403
