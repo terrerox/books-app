@@ -6,4 +6,4 @@
 - Para ver el reporte ir a `https://youtu.be/yJbK9DfWblQ`.
 
 ## Link del tablero en Azure DevOps, historias de usuario
-- Para ver el reporte ir a `https://dev.azure.com/202010403`.
+- Para ver las historias de usuario `https://dev.azure.com/202010403`.
