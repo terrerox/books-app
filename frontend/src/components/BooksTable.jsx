@@ -27,7 +27,7 @@ export const BooksTable = ({ books, setBook, deleteBook, onOpen }) => {
 
     return (
         <Table variant='striped' colorScheme='teal'>
-            <TableCaption>
+            <TableCaption id="logger"> 
                 Updated 2 minutes ago
             </TableCaption>
             <Thead>
@@ -43,7 +43,7 @@ export const BooksTable = ({ books, setBook, deleteBook, onOpen }) => {
                 {
                     books.slice(0, 5).map(book => (
                         <Tr key={book.id}>
-                            <Td>{book.title}</Td>
+                            <Td className='bookTitle'>{book.title}</Td>
                             <Td>{truncateText(book.description)}</Td>
                             <Td>{book.pageCount}</Td>
                             <Td>{truncateText(book.excerpt)}</Td>
@@ -51,6 +51,7 @@ export const BooksTable = ({ books, setBook, deleteBook, onOpen }) => {
                             <Td>
                                 <Flex alignItems="center" justifyContent="space-around">
                                     <Button
+                                        id={'botonEditar-' + book.id}
                                         leftIcon={<FiPenTool />}
                                         colorScheme='blue'
                                         variant='solid'
@@ -59,6 +60,8 @@ export const BooksTable = ({ books, setBook, deleteBook, onOpen }) => {
                                         Editar
                                     </Button>
                                     <Button
+                                        id={'botonEliminar-' + book.id}
+                                        className='deleteButton'
                                         leftIcon={<FiDelete />}
                                         colorScheme='red'
                                         variant='solid'

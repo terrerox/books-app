@@ -44,7 +44,7 @@ export const BookModal = ({ book, createBook, updateBook, isOpen, onClose }) => 
                 title: "Error",
                 description: "Please, complete all the inputs",
                 status: "error",
-                duration: 9000,
+                duration: 90000000,
                 isClosable: true,
             })
         }
@@ -76,6 +76,7 @@ export const BookModal = ({ book, createBook, updateBook, isOpen, onClose }) => 
                     </Button>
                     <Button
                         onClick={handleSubmit}
+                        id="enviarForm"
                         colorScheme='teal'
                     >
                         { book.id ? 'Update book' : 'Create book' }

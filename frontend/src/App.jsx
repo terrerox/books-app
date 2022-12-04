@@ -32,7 +32,7 @@ function App() {
                 title: "Deleted",
                 description: "Book deleted successfully",
                 status: "success",
-                duration: 9000,
+                duration: 90000000,
                 isClosable: true,
             })
         })
@@ -95,10 +95,10 @@ function App() {
   return (
     <Container maxW='90%'>
       <Flex alignItems="center" justifyContent="space-between">
-          <Text my="2" fontSize="2xl" fontFamily="monospace" fontWeight="bold">
+          <Text my="2" fontSize="2xl" id="title" fontFamily="monospace" fontWeight="bold">
               Books
           </Text>
-          <Button colorScheme='teal' variant='outline' onClick={openModal}>
+          <Button colorScheme='teal' id="newButton" variant='outline' onClick={openModal}>
               New
           </Button>
       </Flex>

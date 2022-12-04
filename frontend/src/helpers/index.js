@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://localhost:7268/api'
+export const BASE_URL = 'https://fakerestapi.azurewebsites.net/api/v1'
 
 export const FETCH_OPTIONS = {
     POST: (body) => {
